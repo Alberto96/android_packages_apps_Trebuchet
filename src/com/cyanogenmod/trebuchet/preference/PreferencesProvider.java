@@ -68,7 +68,7 @@ public final class PreferencesProvider {
             }
             public static boolean getShowSearchBar(Context context) {
                 final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                return preferences.getBoolean("ui_homescreen_general_search", true);
+                return preferences.getBoolean("ui_homescreen_general_search", false);
             }
             public static boolean getResizeAnyWidget(Context context) {
                 final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
@@ -81,7 +81,7 @@ public final class PreferencesProvider {
             public static class Scrolling {
                 public static boolean getScrollWallpaper(Context context) {
                     final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                    return preferences.getBoolean("ui_homescreen_scrolling_scroll_wallpaper", true);
+                    return preferences.getBoolean("ui_homescreen_scrolling_scroll_wallpaper", false);
                 }
                 public static Workspace.TransitionEffect getTransitionEffect(Context context, String def) {
                     final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
@@ -96,11 +96,11 @@ public final class PreferencesProvider {
             public static class Indicator {
                 public static boolean getShowScrollingIndicator(Context context) {
                     final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                    return preferences.getBoolean("ui_homescreen_indicator_enable", true);
+                    return preferences.getBoolean("ui_homescreen_indicator_enable", false);
                 }
                 public static boolean getFadeScrollingIndicator(Context context) {
                     final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                    return preferences.getBoolean("ui_homescreen_indicator_fade", true);
+                    return preferences.getBoolean("ui_homescreen_indicator_fade", false);
                 }
                 public static boolean getShowDockDivider(Context context) {
                     final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
@@ -128,11 +128,11 @@ public final class PreferencesProvider {
             public static class Indicator {
                 public static boolean getShowScrollingIndicator(Context context) {
                    final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                    return preferences.getBoolean("ui_drawer_indicator_enable", true);
+                    return preferences.getBoolean("ui_drawer_indicator_enable", false);
                 }
                 public static boolean getFadeScrollingIndicator(Context context) {
                     final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                    return preferences.getBoolean("ui_drawer_indicator_fade", true);
+                    return preferences.getBoolean("ui_drawer_indicator_fade", false);
                 }
             }
         }
